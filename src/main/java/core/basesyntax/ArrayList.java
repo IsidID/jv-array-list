@@ -90,7 +90,8 @@ public class ArrayList<T> implements List<T> {
 
     private void checkIndex(int index, int limit) {
         if (index < 0 || index >= limit) {
-            throw new ArrayListIndexOutOfBoundsException("Index " + index + " is out of bounds for size " + size);
+            throw new ArrayListIndexOutOfBoundsException("Index " + index 
+                    + " is out of bounds for size " + size);
         }
     }
 }
